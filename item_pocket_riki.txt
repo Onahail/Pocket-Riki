@@ -1,0 +1,40 @@
+
+"item_pocket_riki"
+{
+	"ID"							"1250"
+	"BaseClass"             		"item_lua"
+	"AbilityTextureName"			"item_pocket_riki"
+	"ScriptFile"					"item_pocket_riki.lua"
+	"ItemQuality"					"legendary"
+	
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"fade_time"					"0.0"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"fade_delay"				"8.0 6.0 4.0 2.0"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"bonus_health_regen"		"4 5 6 7"
+		}
+		"04" 
+ 		{ 
+ 			"var_type"						"FIELD_FLOAT" 
+ 			"damage_multiplier"				"0.5 0.75 1.0 1.25" 
+ 		} 
+ 		"05" 
+ 		{ 
+ 			"var_type"						"FIELD_INTEGER" 
+ 			"backstab_angle"				"105" 
+ 		} 
+
+	}
+
+}
