@@ -1,1 +1,27 @@
+import discord
+import socket
+
+client = discord.Client()
+client.login("discordautomod@gmail.com", "havemann123")
+
+if not client.is_logged_in:
+	print("Failed to login.")
+	exit(1)
+	
+
+@client.event
+def on_message(msg):
+	if msg.content.startswith("test"):
+		client.send_message(msg.channel, "I am alive!!!!!!!")
+	if msg.content.contains("AutoMod" or "AutoMod"):
+		client.send_message(msg.channel, "You called?")
+	
+	#print("MSG: {}\r\nAUTHOR {}".format(msg.content, str(msg.author)))
+	
+@client.event
+def on_ready():
+	print("Bot is running at the user '{}'".format(client.user.name))
+
+print("Starting...")
+client.run()
 
